@@ -1,6 +1,7 @@
 let boxes = document.querySelectorAll('input')
 let shiftDown = false
 let lastIndex
+let lastChecked
 
 const handleClick = function(e, index){
     let change = false

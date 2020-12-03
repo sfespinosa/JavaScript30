@@ -155,9 +155,10 @@ Primary use:
 .bg0 {background-color: #fff;}
 
 .bg-img1 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('images/GGB.jpg');   
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
 }
 
 
@@ -202,11 +203,16 @@ Primary use:
   height: 100%;
   top: 0;
   left: 0;
-  background: #7579ff;
+  /* background: #7579ff;
   background: -webkit-linear-gradient(bottom, #b224ef, #7579ff);
   background: -o-linear-gradient(bottom, #b224ef, #7579ff);
   background: -moz-linear-gradient(bottom, #b224ef, #7579ff);
-  background: linear-gradient(bottom, #b224ef, #7579ff);
+  background: linear-gradient(bottom, #b224ef, #7579ff);   */
+  background: #000000;
+  background: -webkit-linear-gradient(bottom, #000000);
+  background: -o-linear-gradient(bottom, #000000);
+  background: -moz-linear-gradient(bottom, #000000);
+  background: linear-gradient(bottom, #000000);
   opacity: 0.3;
 }
 
