@@ -108,10 +108,11 @@ Primary use:
 }
 
 .l1-txt2 {
-  font-family: Poppins-Black;
-  font-size: 120px;
+  font-family: Poppins-Thin;
+  font-size: 30px;
   line-height: 1;
-  color: #fff;
+  color: rgba(255,255,255,0.5);
+  /* color: #fff; */
   text-transform: uppercase;
 }
 
