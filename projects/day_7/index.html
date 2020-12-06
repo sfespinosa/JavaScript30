@@ -16,6 +16,7 @@
       { name: 'Lux', year: 2015 }
     ];
 
+    console.log('people array', people)
     const comments = [
       { text: 'Love this!', id: 523423 },
       { text: 'Super good', id: 823423 },
@@ -27,27 +28,30 @@
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
     const some = people.some(person => (new Date().getFullYear()) - person.year >= 19)
-    console.log(some)
+    console.log('using .some() to check if at least one person is 19 or older', some)
     // Array.prototype.every() // is everyone 19 or older?
     const every = people.every(person => (new Date().getFullYear()) - person.year >= 19)
-    console.log(every)
+    console.log('using .every() to check if everyone is 19 or older', every)
 
+    console.log('comments array', comments)
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
     const comment = comments.find(comment => comment.id === 823423)
-    console.log(comment)
+    console.log('using .find() to find the comment w/ ID 823423', comment)
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
     const index = comments.findIndex(comment => comment.id === 823423)
+    console.log('using .findIndex() to find the index of comment w/ ID 823423', index)
     // delete the comment with the ID of 823423
     // comments.splice(index,1)
     const newComments = [
       ...comments.slice(0, index),
       ...comments.slice(index+1)
     ]
-    console.table(newComments)
+
+    // console.table(newComments)
 
   </script>
 </body>
