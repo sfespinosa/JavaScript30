@@ -41,8 +41,8 @@
 						<img src="./assets/project_images/day1.png" class="card-img-top" alt="day 1">
 						<div class="card-body">
 							<a href='./projects/day_1/index.html'><h5 class="card-title text-info">Day 1 - JavaScript Drum Kit</h5></a>
-							<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-secondary"><em>Completed Nov 22, 2020</small></em></p>
+							<p class="card-text text-white">The main topic I learned from this lesson was working with audio tags and using JS to play the files. With audio tags, you're able to use .play() to play the file and work with .currentTime to specify where to start playing the audio. In addition, this lesson works with adding event listeners to the window to watch out for keydown events of specific letters to play the audio, as well as cause certain CSS changes to highlight the key pressed on the page.</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Nov 22, 2020<br/>Posted: Dec 5, 2020</small></em></p>
 						</div>
 					</div>
 				</div>
@@ -53,14 +53,87 @@
 						<img src="./assets/project_images/day2.png" class="card-img-top" alt="day 1">
 						<div class="card-body">
 							<a href='./projects/day_2/index.html'><h5 class="card-title text-info">Day 2 - JS and CSS Clock</h5></a>
-							<p class="card-text text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-secondary"><em>Completed Nov 23, 2020</small></em></p>
+							<p class="card-text text-white">Once the hands of the clock are set up, this lesson focuses on using the current time to determine where the hour, minute, and second hand should go. In order to do this, I learned to use the CSS transform by rotating the hand based on the respective hour, minute, or second it is. Once the function to complete this is written, a setInterval is used to grab the new time every second, so the clock updates every second. Working with dates/time has always been difficult, but this lesson wasn’t too bad. Also, this lesson teaches about cubic-bezier, which is the animation effect of the tick-tock. </p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Nov 23, 2020<br/>Posted: Dec 5, 2020</small></em></p>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- ROW #2 -->
+			<div class="row">
+				
+				<!-- COLUMNS/CARD - DAY 3 -->
+				<div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<img src="./assets/project_images/day3.png" class="card-img-top" alt="day 1">
+						<div class="card-body">
+							<a href='./projects/day_3/index.html'><h5 class="card-title text-info">
+								Day 3 - CSS Variables
+							</h5></a>
+							<p class="card-text text-white">
+								CSS variables are great tools that can be used to manipulate the styling of a page using JavaScript. This lesson focuses on the syntax of variables, using two dashes before the variable name (i.e. —base) and using var() to access the value in other areas (i.e. background-color: var(—base);). For this lesson, the goal was to use sliders on the page to alter the spacing, blur, and border color of an image. Adding event listeners to the sliders and setting the style property with specific syntax is practiced in this lesson to give it the functionality. This lesson also introduces to dataset attributes in the HTML tags, which can be accessed using JavaScript (i.e. data-sizing=‘px’ can be accessed with JS using .dataset.sizing). For more info, please see my detailed <a href='https://scottespinosa.medium.com/css-variables-javascript-525d69192086' target="_blank">blog</a>.
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Nov 24, 2020<br/>Posted: Dec 5, 2020</small></em></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- COLUMNS/CARD - DAY 4 -->
+				<div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<img src="./assets/project_images/day4.png" class="card-img-top" alt="day 1">
+						<div class="card-body">
+							<a href='./projects/day_4/index.html'><h5 class="card-title text-info">
+								Day 4 - Array Cardio Day 1
+							</h5></a>
+							<p class="card-text text-white">
+								While this day focused heavily on using array methods, there was still so much to learn. For most of these array methods, I already feel pretty comfortable with (such as .filter(), .map(), .sort(), and .reduce()). However, this lesson goes into different scenarios where it might be a little tougher to complete the exercise. For example, sorting an array of people by last name where the array of names is a string listed like ‘lastName, firstName.’ The best way to work with this would be to split the string and focus on the last name and sort it afterwards. The lesson also goes through an interesting way to reduce an array of words by adding the instances of each word. The key to this would be to start the accumulator as an empty object and work with it as an object.
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed Nov 25, 2020<br/>Posted: Dec 5, 2020</small></em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ROW #3 -->
+			<div class="row">
+				
+				<!-- COLUMNS/CARD - DAY 5 -->
+				<div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<img src="./assets/project_images/day5.png" class="card-img-top" alt="day 1">
+						<div class="card-body">
+							<a href='./projects/day_5/index.html'><h5 class="card-title text-info">
+								Day 5 - Flex Panel Gallery
+							</h5></a>
+							<p class="card-text text-white">
+								CSS has always been something the I struggle with and this lesson really tested me on it. In order to get the animation effect, a lot of adjustments were needed to center the words on the page and to create flex grids for each respective word. Once established, a transform: translateY style is added to the top and bottom word so it does not show on the page. However once clicked, JavaScript is used to listen to the event to add the .open-active class, which will re-style the transform: translateY so it animates and shows on the page again. With this, the panel will have an animated panel expansion as well, which uses flex to reshape the panel.
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Nov 26, 2020<br/>Posted: Dec 5, 2020</small></em></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- COLUMNS/CARD - DAY 6 -->
+				<div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<img src="./assets/project_images/day6.png" class="card-img-top" alt="day 1">
+						<div class="card-body">
+							<a href='./projects/day_6/index.html'><h5 class="card-title text-info">
+								Day 6 - Type Ahead
+							</h5></a>
+							<p class="card-text text-white">
+								This was a functionality I really wanted to include in my final project. While I was looking for resources in React to implement this, this lesson was to complete it in full JavaScript. Once an array of objects of cities have been fetched, event listeners are added to the input to listen for value typed in by the user. As the user types each letter, a new RegExp object is used to search through the array of any matches to the input for both the city or the state. Once these matches are found, these are displayed as a list using CSS. 
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed Nov 27, 2020<br/>Posted: Dec 5, 2020</small></em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+
 			</div>
 		</div>
 	</div>
