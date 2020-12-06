@@ -177,7 +177,7 @@
 						<a href='./projects/day_9/index.html'><img src="./assets/project_images/day9.gif" class="card-img-top" alt="day 1">
 						<div class="card-body">
 							<h5 class="card-title text-info">
-								Day 9 - Dev Tools Domination
+								Day 9 - Dev Tools Tricks
 							</h5></a>
 							<p class="card-text text-white">
 								Through my coding journey so far, I’ve only used console.log() to log messages in the console. It wasn’t until this lesson where I found out there are so many other methods you can use in the JavaScript console. For whatever reason someone might use these, they’re pretty cool ways to use the JavaScript console, especially when warning users and showing errors in the console. My favorite would have to be console.table() to create readable tables of arrays and objects.
@@ -213,7 +213,7 @@
 						<a href='./projects/day_11/index.html'><img src="./assets/project_images/day11.gif" class="card-img-top" alt="day 1">
 						<div class="card-body">
 							<h5 class="card-title text-info">
-								Day 11 - Custom Video Player
+								Day 11 - Custom HTML5 Video Player
 							</h5></a>
 							<p class="card-text text-white">
 								This was another fun one to play around with since we’re using another media tag. Just like with the audio tag in the first lesson, this lesson focuses on the video tag, adding a volume control and speed sliders, along with a video scrubbing and time skips for the video itself. For the volume slider, I knew that that where the pointer ended on the slider would determine the percentage volume, but I had to learn about .currentTime and .duration for the video tag to calculate it. This would work exactly the same for the scrub bar, but using a combination of mouse events to determine where the user is at on the bar. The other features were pretty simple once I learned more about what was available to the video tag (such as .play() and .pause() to play and pause the video, as well as .paused to determine if the video is paused.).
@@ -260,15 +260,51 @@
 				</div>
 
 				<!-- COLUMNS/CARD - DAY 14 -->
+				<div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<a href='./projects/day_14/index.html'><img src="./assets/project_images/day14.gif" class="card-img-top" alt="day 1">
+						<div class="card-body">
+							<h5 class="card-title text-info">
+								Day 14 - JavaScript - Reference VS Copy
+							</h5></a>
+							<p class="card-text text-white">
+								References vs copying is always so confusing when it comes to JavaScript. Sometimes we want to manipulate something, but not alter the original, yet it still does. Why? It depends on which one you are trying to change. When it comes to strings, numbers, and booleans, these changes are usually fine. When it comes to arrays, it gets a little more confusing as it creates references. Meaning, making changes to one array will affect the other. There are numerous ways to make a copy of an array (i.e. using .slice(), .concat(), or using the spread operator. The same issues arise with objects, which also has number ways to make a copy (i.e Object.assign() and the spread operator). One thing to note that these copies only go one level deep. Meaning that if an array is an array of arrays or an object is an object with objects, the sub-arrays & sub-objects will be references and will also both the copy and the original sub-arrays & sub-objects.
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 5, 2020<br/>Posted: Dec 6, 2020</small></em></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ROW 8 -->
+			<div class="row">
+				
+				<!-- COLUMNS/CARD - DAY 15 -->
+				<div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<a href='./projects/day_15/index.html'><img src="./assets/project_images/day15.gif" class="card-img-top" alt="day 1">
+						<div class="card-body">
+							<h5 class="card-title text-info">
+								Day 15 - LocalStorage and Event Delegation
+							</h5></a>
+							<p class="card-text text-white">
+								I’ve briefly used localStorage during dev bootcamp, mostly to handle user authentication and store JSON web tokens to persist log ins. However, there’s so much more to it with persist all sorts of data. With this lesson, we are creating a tapas list with a checkbox for done (which is similar to creating a to-do list). Creating the to-do list using the form on the pages is fairly simple, using forms and input, type checkbox. What we are trying to persist is the list, or array, of tapas names and whether or not they’re done. LocalStorage is a set of key/value pairs and has it has functions like .getItem(key) and .setItem(key, value) to utilize. However, the values in localStorage can only be strings. So in order to store arrays/objects as strings, we’d use JSON.stringify() to store & JSON.parse() to pull the items from localStorage. With storing the state of the checkbox, we would add the event listener to the ul tag itself because the li tags in the list is constantly changing. With that, you can use attributes (such as index) in the HTML tags to access the item in the items array, make the change to “done” and re-store the data to localStorage.
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 6, 2020<br/>Posted: Dec 6, 2020</small></em></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- COLUMNS/CARD - DAY 16 -->
 				<!-- <div class="col-sm">
 					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
 						<a href='./projects/day_14/index.html'><img src="./assets/project_images/day14.gif" class="card-img-top" alt="day 1">
 						<div class="card-body">
 							<h5 class="card-title text-info">
-								Day 12 - Key Sequence Detection
+								Day 14 - JavaScript References VS Copying
 							</h5></a>
 							<p class="card-text text-white">
-								Growing up, the Konami Code was something that was memorized in my household. It was so important to get those extra 30 lives for Contra, or else you’ll never have a chance to beat the game. Regardless, I never did, but this code will be engraved in my brain for the rest of my life. For this lesson, it knew that the window would have an event listener for the keydowns of each key. What I learned from the lesson was how to store that information and to look for the EXACT order of the keydowns. The secret code would be stored in the script and each keydown would be pushed into an array. This array would always have at most the same amount of keys as the secret code. After each key down, this array would be compared to the secret code (using a .join() since two arrays cannot equal each other). If they match, then something will happen! While we don’t get extra lives by entering the code here, we do get a nice surprise. 
+								References vs copying is always so confusing when it comes to JavaScript. Sometimes we want to manipulate something, but not alter the original, yet it still does. Why? It depends on which one you are trying to change. When it comes to strings, numbers, and booleans, these changes are usually fine. When it comes to arrays, it gets a little more confusing as it creates references. Meaning, making changes to one array will affect the other. There are numerous ways to make a copy of an array (i.e. using .slice(), .concat(), or using the spread operator. The same issues arise with objects, which also has number ways to make a copy (i.e Object.assign() and the spread operator). One thing to note that these copies only go one level deep. Meaning that if an array is an array of arrays or an object is an object with objects, the sub-arrays & sub-objects will be references and will also both the copy and the original sub-arrays & sub-objects.
 							</p>
 							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 5, 2020<br/>Posted: Dec 6, 2020</small></em></p>
 						</div>
