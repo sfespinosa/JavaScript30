@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Console > Break On > Attribute Modifications to check how things change in script
+
+    // Regular
+    console.log('using console.log() - ', 'Hello!')
+
+    // Interpolated
+    console.log(`interpolating with %s below:`)
+    console.log('Hello, I am a %s string!', 'COOL')
+    console.log('interpolating with a variable below:')
+    let input = 'TIGHT'
+    console.log(`Hello, I am a ${input} string!`)
+
+    // Styled
+    console.log('prefacing with %c and adding CSS styling below:')
+    console.log('%cI am some great text', 'font-size: 20px; background: red;')
+
+    // warning!
+    console.warn('using console.warn() - ', 'Watch out!')
+
+    // Error :|
+    console.error('using console.error() - ', 'DANGER!')
+
+    // Info
+    console.info('using console.info() - ', 'FYI!')
+
+    // Testing - will only fire if the assertion is false
+    console.log('using console.assert() where message will display if the first parameter is false')
+    console.assert(1 === 2, 'That is wrong!')
+
+    // clearing
+    console.log('using console.clear() here with clear the console above')
+    // console.clear()
+
+    // Viewing DOM Elements
+    const p = document.querySelector('p')
+    console.log('using console.log() on the p element', p); // logs element
+    console.log('using console.dir() on the p element to inspect the element more in depth below:')
+    console.dir(p); // allows to open up element and inspect prototype
+
+    // Grouping together
+    console.log('using console.group() on this dogs array below:', dogs)
+    dogs.forEach(dog => {
+      // console.group(`${dog.name}`)
+      console.groupCollapsed(`${dog.name}`)
+      console.log(`This is ${dog.name}`)
+      console.log(`${dog.name} is ${dog.age} years old`)
+      console.log(`${dog.name} is ${dog.age * 7} dog years old`)
+      console.groupEnd(`${dog.name}`)
+    })
+
+    // counting
+    console.log('using console.count() to create a running tally')
+    console.count('counting this');
+    console.count('counting this');
+    console.count('counting that');
+    console.count('counting this');
+    console.count('counting that');
+    console.count('counting this');
+    console.count('counting this');
+    console.count('counting that');
+
+    // timing 
+    console.log('using console.time() to measure the speed of something:')
+    console.time('fetching data');
+    console.timeEnd('fetching data');
+
+    // table
+    console.log('using console.table() to create a readable table of an array/objects:')
+    console.table(dogs)
+
+  </script>
+</body>
+</html>
