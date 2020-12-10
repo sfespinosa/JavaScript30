@@ -326,7 +326,7 @@
 							<p class="card-text text-white">
 								Today’s lesson wasn’t too bad as it wants us to sort the list of bands provided, ignoring any articles at the beginning of the name (i.e. “A”, “An”, and “The”). I was able to sort the list as needed, but the method I used was a little convoluted to get the job done. While I used string splitting to check the first word against an array of articles, this lesson uses RegEx to insensitively (disregards upper case vs lower case characters) at the start of each string and using .sort() to sort the band names as needed. 
 							</p>
-							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 6, 2020<br/>Posted: Dec 6, 2020</small></em></p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 8, 2020<br/>Posted: Dec 8, 2020</small></em></p>
 						</div>
 					</div>
 				</div>
@@ -342,11 +342,47 @@
 							<p class="card-text text-white">
 								The purpose of this lesson is to be able to pull strings of video times to calculate the total number time it takes to play all the videos using reduce. We’re given some list items where there is a time data-set attribute on each one (view the elements to see them as they’re listed as data-time=“4:04”).  After pulling all the lis with the data-time attribute using querySelectorAll, we have to work with this as an array either by using the spread operator into an array or using Array.from(). From this point on, it was easy to map out the time strings, covert them in to workable integers to calculate the total time. One thing I learned to make life a bit easier after watching this lesson was to use ES6 destructuring when splitting the video string and using .map(parseFloat) to convert them to workable integers.
 							</p>
-							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 7, 2020<br/>Posted: Dec 7, 2020</small></em></p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 9, 2020<br/>Posted: Dec 9, 2020</small></em></p>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<!-- ROW 10 -->
+			<div class="row">
+				
+				<!-- COLUMNS/CARD - DAY 19 -->
+				<div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<a href='./projects/day_19/index.html'><img src="./assets/project_images/day19.gif" class="card-img-top" alt="day 1">
+						<div class="card-body">
+							<h5 class="card-title text-info">
+								Day 19 - Webcam Fun
+							</h5></a>
+							<p class="card-text text-white">
+								Whew! I learned a lot with this lesson. It’s another lesson working with the canvas, as well as with a webcam. First off, I learned that in order to work with a webcam, we need a secure server (https:// or localhost) due to security reasons. Once configured, the lesson goes over navigator.mediaDevices.getUserMedia() in order to pull from the webcam. One part where I got stuck was that the lesson goes over converting that into a URL to use as the live stream src for the video tag, however that has since been deprecated. Instead, you’d assign the srcObject to the stream, which got this to work! From there, the steam can be  “painted” to the canvas using (.drawImage()) along with the ‘canplay’ event listener on the video, pulling from the stream whenever the a function is called when clicking on “Take Photo.” It creates a base64, a text version of the actual photo. We can then use this to create a downloadable link, that will download the image to the local. To go even further, the lesson works with the pixels on the image on the canvas to create pretty cool effects. It teaches how to reach the array that returns when pulling .getImageData() and how to adjust the pixels using .putImageData(). It’s pretty fun to play around with!
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 10, 2020<br/>Posted: Dec 10, 2020</small></em></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- COLUMNS/CARD - DAY 20 -->
+				<!-- <div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<a href='./projects/day_18/index.html'><img src="./assets/project_images/day18.gif" class="card-img-top" alt="day 1">
+						<div class="card-body">
+							<h5 class="card-title text-info">
+								Day 18 - Adding Up Times with Reduce
+							</h5></a>
+							<p class="card-text text-white">
+								The purpose of this lesson is to be able to pull strings of video times to calculate the total number time it takes to play all the videos using reduce. We’re given some list items where there is a time data-set attribute on each one (view the elements to see them as they’re listed as data-time=“4:04”).  After pulling all the lis with the data-time attribute using querySelectorAll, we have to work with this as an array either by using the spread operator into an array or using Array.from(). From this point on, it was easy to map out the time strings, covert them in to workable integers to calculate the total time. One thing I learned to make life a bit easier after watching this lesson was to use ES6 destructuring when splitting the video string and using .map(parseFloat) to convert them to workable integers.
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 7, 2020<br/>Posted: Dec 7, 2020</small></em></p>
+						</div>
+					</div>
+				</div>
+			</div> -->
 
 
 			</div>
