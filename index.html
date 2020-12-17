@@ -376,7 +376,8 @@
 								Day 20 - Speech Detection
 							</h5></a>
 							<p class="card-text text-white">
-								It’s pretty cool that speech recognition exists without the need for libraries or frameworks as they live on top of the browser. To work with this, we would need to create a new instance of SpeechRecognition in the script and set the interim results as true (to display the words as we are saying them, where as false will display when the user stops speaking). To pull the speech data, we’d add an event listener to the recognition instance, listening for the result. Within this event, there are results, which houses a speech recognition results list, where a transcript is nested inside and an isFinal boolean, which indicates if the user stopped speaking. The transcript can then be used to pull the full speech from the user, creating it into an array and joining them together.  Once a user stops speaking, the recognition will need to start again in order to listen again. Therefore we would need to add an event listener for the end of speech recognition, so it can start again. Adding the transcript to the DOM is easy by appending p tags and changing the inner text to the transcript, but you can do a lot of fun stuff like adding special events if the user says something specific. Try saying “babushka” and see what happens!</p>
+								It’s pretty cool that speech recognition exists without the need for libraries or frameworks as they live on top of the browser. To work with this, we would need to create a new instance of SpeechRecognition in the script and set the interim results as true (to display the words as we are saying them, where as false will display when the user stops speaking). To pull the speech data, we’d add an event listener to the recognition instance, listening for the result. Within this event, there are results, which houses a speech recognition results list, where a transcript is nested inside and an isFinal boolean, which indicates if the user stopped speaking. The transcript can then be used to pull the full speech from the user, creating it into an array and joining them together.  Once a user stops speaking, the recognition will need to start again in order to listen again. Therefore we would need to add an event listener for the end of speech recognition, so it can start again. Adding the transcript to the DOM is easy by appending p tags and changing the inner text to the transcript, but you can do a lot of fun stuff like adding special events if the user says something specific. Try saying “babushka” and see what happens!
+							</p>
 							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 15, 2020<br/>Posted: Dec 15, 2020</small></em></p>
 						</div>
 					</div>
@@ -395,27 +396,29 @@
 								Day 21 - Geolocation
 							</h5></a>
 							<p class="card-text text-white">
-								This lesson focuses on what’s available with geolocation, which is more than longitude and latitude as it also includes a speedometer. Outside of coding, we were able to dabble with Xcode (iPhone Developer tool) as well as Safari developer tools to check out the console for the Safari page we are working with in Xcode. In order to grab this information, we listen for the user’s position using navigator.geolocation.watchPosition(), to watch the user’s position over time. There’s a .geolocation.getPosition(), but that only gives the user’s location at that moment in time. With Xcode, we can simulate movement of a user and from the event of .watchPosition(), we have timestamps, accuracy (measured in meters), heading (number of degrees relative to north), latitude, longitude, & speed (in km/h). Using these values, we can rotate the compass based on the heading and add the textContent of speed. watchPosition() also handles error handling in the event where the user decides not to share their location.</p>
+								This lesson focuses on what’s available with geolocation, which is more than longitude and latitude as it also includes a speedometer. Outside of coding, we were able to dabble with Xcode (iPhone Developer tool) as well as Safari developer tools to check out the console for the Safari page we are working with in Xcode. In order to grab this information, we listen for the user’s position using navigator.geolocation.watchPosition(), to watch the user’s position over time. There’s a .geolocation.getPosition(), but that only gives the user’s location at that moment in time. With Xcode, we can simulate movement of a user and from the event of .watchPosition(), we have timestamps, accuracy (measured in meters), heading (number of degrees relative to north), latitude, longitude, & speed (in km/h). Using these values, we can rotate the compass based on the heading and add the textContent of speed. watchPosition() also handles error handling in the event where the user decides not to share their location.
+							</p>
 							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 16, 2020<br/>Posted: Dec 16, 2020</small></em></p>
 						</div>
 					</div>
 				</div>
 
 				<!-- COLUMNS/CARD - DAY 22 -->
-				<!-- <div class="col-sm">
+				<div class="col-sm">
 					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
-						<a href='./projects/day_20/index.html'><img src="./assets/project_images/day20.gif" class="card-img-top" alt="day 20">
+						<a href='./projects/day_22/index.html'><img src="./assets/project_images/day22.gif" class="card-img-top" alt="day 22">
 						<div class="card-body">
 							<h5 class="card-title text-info">
-								Day 20 - Speech Detection
+								Day 22 - Follow Along Link Highlighter
 							</h5></a>
 							<p class="card-text text-white">
-								It’s pretty cool that speech recognition exists without the need for libraries or frameworks as they live on top of the browser. To work with this, we would need to create a new instance of SpeechRecognition in the script and set the interim results as true (to display the words as we are saying them, where as false will display when the user stops speaking). To pull the speech data, we’d add an event listener to the recognition instance, listening for the result. Within this event, there are results, which houses a speech recognition results list, where a transcript is nested inside and an isFinal boolean, which indicates if the user stopped speaking. The transcript can then be used to pull the full speech from the user, creating it into an array and joining them together.  Once a user stops speaking, the recognition will need to start again in order to listen again. Therefore we would need to add an event listener for the end of speech recognition, so it can start again. Adding the transcript to the DOM is easy by appending p tags and changing the inner text to the transcript, but you can do a lot of fun stuff like adding special events if the user says something specific. Try saying “babushka” and see what happens!</p>
-							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 15, 2020<br/>Posted: Dec 15, 2020</small></em></p>
+								This lesson was inspired by Stripe’s pretty cool nav bar that has seamless transitions when hovering each link, which we will eventually get to. As a more simplified version, this lesson focuses on creating highlights over certain links all around the page. In order to create the highlight, the span with some CSS is added over each element when the mouse is hovering over it. In order to get the correct coordinates of the link, we’d use .getBoundingClientRect() to get the x & y coordinates, as well as the sizes to apply to the highlight span to show up on the link or word. Once applied, we would need to account for the user scrolling on the page as it would mess with where the span would go. In order to compensate, we would need to add the values of window.scrollX and window.scrollY to the values of the coords.left and coords.top.
+							</p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 17, 2020<br/>Posted: Dec 17, 2020</small></em></p>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 
 			</div>
