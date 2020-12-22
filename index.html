@@ -440,21 +440,21 @@
 				</div>
 
 				<!-- COLUMNS/CARD - DAY 24 -->
-				<!-- <div class="col-sm">
+				<div class="col-sm">
 					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
-						<a href='./projects/day_22/index.html'><img src="./assets/project_images/day22.gif" class="card-img-top" alt="day 22">
+						<a href='./projects/day_24/index.html'><img src="./assets/project_images/day24.gif" class="card-img-top" alt="day 24">
 						<div class="card-body">
 							<h5 class="card-title text-info">
-								Day 22 - Follow Along Link Highlighter
+								Day 24 - Sticky Nav
 							</h5></a>
 							<p class="card-text text-white">
-								This lesson was inspired by Stripe’s pretty cool nav bar that has seamless transitions when hovering each link, which we will eventually get to. As a more simplified version, this lesson focuses on creating highlights over certain links all around the page. In order to create the highlight, the span with some CSS is added over each element when the mouse is hovering over it. In order to get the correct coordinates of the link, we’d use .getBoundingClientRect() to get the x & y coordinates, as well as the sizes to apply to the highlight span to show up on the link or word. Once applied, we would need to account for the user scrolling on the page as it would mess with where the span would go. In order to compensate, we would need to add the values of window.scrollX and window.scrollY to the values of the coords.left and coords.top.
-							</p>
-							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 17, 2020<br/>Posted: Dec 17, 2020</small></em></p>
+                This lesson is pretty cool because so far, I’ve mostly use templates to help me stylize my navigation bar on my applications. For today, I learned how to have the nav bar stick to the top of the window once it reaches there, as well as do some fun things once it gets there. To do this, we would need to see where the top of the nav bar is located on the window and make the nav fixed when window.scrollY is greater than equal to the top of the nav, we can add a class and CSS styling to fix the position to help us. When fixing the position, the rest of the document will take up the space where the nav bar used to be (since fixing it to the top will cause it to no longer take up space). To adjust for this, we would need to offset the amount by adding padding that is equal to the offsetHeight of the nav, then removing it when it’s no longer fixed to the top. When adding classes, it’s best to add them to the body so if any other changes need to happen when the nav bar is fixed, we can use it to change other elements as well, such as animating a logo or zooming into the document.
+              </p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Dec 22, 2020<br/>Posted: Dec 22, 2020</small></em></p>
 						</div>
 					</div>
 				</div>
-      </div> -->
+      </div>
       
 
 			</div>
