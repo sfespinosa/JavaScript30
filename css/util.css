@@ -14,7 +14,7 @@ body, html {
 	font-family: Arial, sans-serif;
 	font-size: 15px;
 	color: #666666;
-	background-image: url('../images/GGB.jpg');   
+	background-image: url('../assets/GGB.jpg');   
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;

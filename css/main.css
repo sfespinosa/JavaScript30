@@ -156,7 +156,7 @@ Primary use:
 .bg0 {background-color: #fff;}
 
 .bg-img1 {
-  background-image: url('images/GGB.jpg');   
+  background-image: url('../assets/GGB.jpg');   
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
