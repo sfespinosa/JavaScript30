@@ -528,6 +528,41 @@
 				</div>
       </div>
 
+			<!-- ROW 15 -->
+			<div class="row">
+				
+				<!-- COLUMNS/CARD - DAY 29 -->
+				<div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<a href='./projects/day_29/index.html'><img src="./assets/project_images/day29.gif" class="card-img-top" alt="day 29">
+						<div class="card-body">
+							<h5 class="card-title text-info">
+								Day 29 - Countdown Timer
+							</h5></a>
+							<p class="card-text text-white">
+                This lesson creates a pretty useful timer when needing to quick countdown timers with a visual representation of the countdown as well as the time of when to actually return. First thought would be use setInterval for the countdown itself, but that comes with challenges when clicking away from the browser as well as using iOS. Instead, we would get the time now using Date.now(), which obtains the time in milliseconds, then add the number of seconds we are counting down to get the stop time. Here is where we can use setInterval to figure out how much time is left on the clock by determining seconds left using the stop time and subtracting the current time. Then, we’d use a separate function to display the time remaining because setInterval doesn’t take into account the first second when displaying just inside the setInterval. With this setup, we do a lot of DOM manipulation to display the countdown, as well as the time end, working the numbers to display everything correctly. Once this is all set up, event listeners can easily be added to the buttons and custom minutes to set the time with the appropriate countdown on the timer.
+              </p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Jan 6, 2021<br/>Posted: Jan 6, 2021</small></em></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- COLUMNS/CARD - DAY 30 -->
+				<!-- <div class="col-sm">
+					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
+						<a href='./projects/day_28/index.html'><img src="./assets/project_images/day28.gif" class="card-img-top" alt="day 28">
+						<div class="card-body">
+							<h5 class="card-title text-info">
+								Day 28 - Video Speed Controller
+							</h5></a>
+							<p class="card-text text-white">
+                It’s the return of the Big Buck Bunny and another quick lesson working with the media player. It works with a scrubber that will change the speed of the video based on the mousemove event on it, giving it more of a DJ feel. To get the measurement of where the mouse is at on the scrub bar and to give it the percent, we grab the y-coordinates using e.pageY - this.offsetTop, mainly because this will give the most accurate location of the coordinate if there was padding involved. We then convert that to a percentage amount by dividing the y-coordinate by the height of the bar using .offsetHeight and apply that styling to the speedbar to get the animation. Then we would set a min speed and a max speed for the video and use those values to calculate the playback rate of the video. We can then apply that value to the video itself using video.playbackRate.
+              </p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Jan 4, 2021<br/>Posted: Jan 4, 2021</small></em></p>
+						</div>
+					</div>
+				</div> -->
+      </div>
 
 			</div>
 		</div>
