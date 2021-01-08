@@ -548,20 +548,20 @@
 				</div>
 
 				<!-- COLUMNS/CARD - DAY 30 -->
-				<!-- <div class="col-sm">
+				<div class="col-sm">
 					<div class="card mb-3 bg-dark text-center" style="max-width: 540px;">
-						<a href='./projects/day_28/index.html'><img src="./assets/project_images/day28.gif" class="card-img-top" alt="day 28">
+						<a href='./projects/day_30/index.html'><img src="./assets/project_images/day30.gif" class="card-img-top" alt="day 30">
 						<div class="card-body">
 							<h5 class="card-title text-info">
-								Day 28 - Video Speed Controller
+								Day 30 - Whack A Mole
 							</h5></a>
 							<p class="card-text text-white">
-                It’s the return of the Big Buck Bunny and another quick lesson working with the media player. It works with a scrubber that will change the speed of the video based on the mousemove event on it, giving it more of a DJ feel. To get the measurement of where the mouse is at on the scrub bar and to give it the percent, we grab the y-coordinates using e.pageY - this.offsetTop, mainly because this will give the most accurate location of the coordinate if there was padding involved. We then convert that to a percentage amount by dividing the y-coordinate by the height of the bar using .offsetHeight and apply that styling to the speedbar to get the animation. Then we would set a min speed and a max speed for the video and use those values to calculate the playback rate of the video. We can then apply that value to the video itself using video.playbackRate.
+                We made it to day 30 and it’s a classic arcade game, whack a mole! In order to create the random length of time the mole would show up in a hole, we need a helper function to complete that for us. We also need a helper function to choose a random hole the mole would be popping out of. Taking the DOM elements of the holes, we’d choose a random index from the node list, include recursion to make sure the same hole isn’t chosen twice in a row, then return the hole. Next, we would need a function to combine these two together to include a class to the hole for the amount to time to show pop up the mole from hole and using the time with setTimeout to remove the class so the mole jumps back into the hole. Next, we could create a function that would start the game but invoking the previous function, reseting the scoreboard, and setting a setTimeout to end the game. Lastly, we would need to keep score by adding event listeners to each mole for a click, then increasing the amount of the score displayed. We can add some legitimacy to the click by using e.isTrusted to know the user actually clicked and it wasn’t a fake JavaScript click. Also, remove the class from the hole so the mole goes back down after the hit, so the user cannot get in multiple hits. I also added a feature to save the high score using local storage so you can compete with yourself!
               </p>
-							<p class="card-text"><small class="text-secondary"><em>Completed: Jan 4, 2021<br/>Posted: Jan 4, 2021</small></em></p>
+							<p class="card-text"><small class="text-secondary"><em>Completed: Jan 8, 2021<br/>Posted: Jan 8, 2021</small></em></p>
 						</div>
 					</div>
-				</div> -->
+				</div>
       </div>
 
 			</div>
